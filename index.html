@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Erleben Sie eine spannende Cooking Night mit frischen Zutaten im Green House! Jetzt anmelden.">
+    <title>Grünkram Cooking Night</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Grünkram</h1>
+            <div class="titel_pattern">
+                <img class="pattern" src="assets/img/holtzbreet.svg" alt="Dekoratives Holzbrett als Hintergrund für die Überschrift 'Präsentiert'">
+                <h2>Präsentiert</h2>
+            </div>
+        </header>
+
+        <div class="backgroundWrapper">
+            <img class="backgroundImg" src="assets/img/hinterground.svg" alt="Illustration verschiedener Gemüsesorten">
+        </div>
+
+        <!-- Card 1 -->
+        <section class="card">
+            <img id="titelimg" src="assets/img/001.png" alt="Cooking Night – Studierende kochen und genießen gemeinsam">
+            <h3>Cooking Night im Green House</h3>
+            <p>Erleben Sie Spaß und Genuss beim gemeinsamen Kochen und Schlemmen. Lassen Sie sich überraschen, welche Kochkoryphäe Sie durch den Abend führt!</p>
+        </section>
+
+        <!-- Card 2 -->
+        <section class="card">
+            <h4>Worauf Sie sich freuen dürfen:</h4>
+            <p>Ein gemeinsam zubereitetes Menü mit frischen Zutaten aus eigenem Anbau – ökologisch, regional und erschwinglich.</p>
+            <img src="assets/img/002.png" alt="Bäuerin trägt eine Gemüsekiste mit frischen Produkten vom Hof"> 
+            <h4>Eingeladen sind:</h4>
+            <p>Studierende der Hochschulorte Worms, Mannheim, Ludwigshafen, Heidelberg und Darmstadt aller Fachrichtungen.</p>
+        </section>
+
+        <!-- Card 3 - Kosten und Anmeldung -->
+        <section class="card">
+            <img src="assets/img/003.png" alt="Bäuerin trägt eine Gemüsekiste mit frischen Produkten vom Hof">
+            <div class="costInfo">
+                <p>Unkostenbeitrag:<br>
+                <strong>EUR 20,-</strong> <br>
+                Anmeldeschluss:<br>
+                <strong>1. Oktober 2021</strong></p>
+            </div>
+            <p>Nutzen Sie Ihre Chance: Alle Teilnehmer der Cooking Night können unsere wöchentliche Gemüsekiste drei Monate lang zum Sonderpreis abonnieren.</p>
+            <h4>4 × in diesem Herbst</h4>
+            <p>Jeweils ab 18:30 Uhr <br>In unserem Gemüsehof<br>Bobenheim-Roxheim, Viehweg 17</p>
+        </section>
+
+        <!-- Card 4 - Anmeldung -->
+        <section class="card">
+            <h3>Anmeldung</h3>
+            <img id="anmeldungimg" src="assets/img/005.png" alt="Mehrere Hände von Menschen, die gemeinsam frisches Obst und gesundes Essen essen">
+            <form novalidate>
+                <input type="text" id="name" name="name" placeholder="Ihr Name" required><br>
+                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required><br>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required><br>
+
+                <!-- Alert Messages -->
+                <div class="alert alert-danger" role="alert"></div>
+                <div class="alert alert-success" role="alert"></div>
+
+                <!-- Terminauswahl -->
+                <fieldset id="Lieblingstermin">
+                    <legend><h4>Lieblingstermin:</h4></legend>
+                    <label class="primaryLabel"><input type="radio" name="Lieblingstermin" value="29-10-2021"> Freitag, 29. Oktober 2021</label><br>
+                    <label class="primaryLabel"><input type="radio" name="Lieblingstermin" value="30-10-2021"> Samstag, 30. Oktober 2021</label><br>
+                    <label class="primaryLabel"><input type="radio" name="Lieblingstermin" value="05-11-2021"> Freitag, 05. November 2021</label><br>
+                    <label class="primaryLabel"><input type="radio" name="Lieblingstermin" value="06-11-2021"> Samstag, 06. November 2021</label>
+                </fieldset> 
+                
+                <fieldset id="Ersatztermin">
+                    <legend><h4 id="ersatztermin">Ersatztermin:</h4></legend>
+                    <label class="secondaryLabel"><input type="radio" name="ersatztermin" value="29-10-2021"> Freitag, 29. Oktober 2021</label><br>
+                    <label class="secondaryLabel"><input type="radio" name="ersatztermin" value="30-10-2021"> Samstag, 30. Oktober 2021</label><br>
+                    <label class="secondaryLabel"><input type="radio" name="ersatztermin" value="05-11-2021"> Freitag, 05. November 2021</label><br>
+                    <label class="secondaryLabel"><input type="radio" name="ersatztermin" value="06-11-2021"> Samstag, 06. November 2021</label>
+                </fieldset>
+
+                <button type="submit">Senden</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Script -->
+    <script src="main.js"></script>
+</body>
+</html>
